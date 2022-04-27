@@ -130,6 +130,17 @@ sil_rew_mem(void *mem)
 }
 
 /*
+ *  I/O空間アクセス関数郡
+ *   メモリ空間と同じ
+ */
+#define sil_reb_iop sil_reb_mem
+#define sil_wrb_iop sil_wrb_mem
+#define sil_reh_iop sil_reh_mem
+#define sil_wrh_iop sil_wrh_mem
+#define sil_wrw_iop sil_wrw_mem
+#define sil_rew_iop sil_rew_mem
+
+/*
  *  NMIを除くすべての割込みの禁止
  */
 LOCAL_INLINE uint32
